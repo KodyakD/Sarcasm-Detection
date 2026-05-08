@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# OS and editors
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+# Large model and dataset artifacts (do not commit heavy files)
+/marbert*/
+/marbert_sarcasm_model/
+/sarcasm_model/
+/marbert2/
+/marbert3/
+/marbert4/
+model.safetensors
+*.safetensors
+*.ckpt
+*.pt
+*.bin
+# Data archives and raw datasets
+/data/raw/
+/data/archive/
+/data/*.zip
+/data/*.tar.gz
+
+# Notebooks and artifacts
+/notebooks/artifacts/

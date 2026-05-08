@@ -1,0 +1,591 @@
+{
+  "profiles": [
+    {
+      "file": "data\\raw\\training_data.csv",
+      "exists": true,
+      "rows": 12548,
+      "cols": 4,
+      "columns": [
+        "tweet",
+        "sarcasm",
+        "sentiment",
+        "dialect"
+      ],
+      "dtypes": {
+        "tweet": "object",
+        "sarcasm": "bool",
+        "sentiment": "object",
+        "dialect": "object"
+      },
+      "label_col": "sarcasm",
+      "text_col": "tweet",
+      "missing_counts": {
+        "tweet": 0,
+        "sarcasm": 0,
+        "sentiment": 0,
+        "dialect": 0
+      },
+      "missing_pct": {
+        "tweet": 0.0,
+        "sarcasm": 0.0,
+        "sentiment": 0.0,
+        "dialect": 0.0
+      },
+      "duplicate_rows": 16,
+      "duplicate_text": 61,
+      "label_distribution": {
+        "False": {
+          "count": 10380,
+          "pct": 82.72
+        },
+        "True": {
+          "count": 2168,
+          "pct": 17.28
+        }
+      },
+      "label_missing": 0,
+      "text_stats": {
+        "empty_or_whitespace": 0,
+        "len_min": 4,
+        "len_max": 303,
+        "len_mean": 102.9,
+        "len_median": 108.0,
+        "len_p95": 142.0
+      },
+      "dialect_breakdown": [
+        {
+          "dialect": "egypt",
+          "count": 2675,
+          "sarcastic_rate": 0.3477
+        },
+        {
+          "dialect": "gulf",
+          "count": 644,
+          "sarcastic_rate": 0.2438
+        },
+        {
+          "dialect": "levant",
+          "count": 624,
+          "sarcastic_rate": 0.2212
+        },
+        {
+          "dialect": "magreb",
+          "count": 43,
+          "sarcastic_rate": 0.3488
+        },
+        {
+          "dialect": "msa",
+          "count": 8562,
+          "sarcastic_rate": 0.1084
+        }
+      ]
+    },
+    {
+      "file": "data\\raw\\testing_data.csv",
+      "exists": true,
+      "rows": 3000,
+      "cols": 4,
+      "columns": [
+        "tweet",
+        "sarcasm",
+        "sentiment",
+        "dialect"
+      ],
+      "dtypes": {
+        "tweet": "object",
+        "sarcasm": "bool",
+        "sentiment": "object",
+        "dialect": "object"
+      },
+      "label_col": "sarcasm",
+      "text_col": "tweet",
+      "missing_counts": {
+        "tweet": 0,
+        "sarcasm": 0,
+        "sentiment": 0,
+        "dialect": 0
+      },
+      "missing_pct": {
+        "tweet": 0.0,
+        "sarcasm": 0.0,
+        "sentiment": 0.0,
+        "dialect": 0.0
+      },
+      "duplicate_rows": 2,
+      "duplicate_text": 4,
+      "label_distribution": {
+        "False": {
+          "count": 2179,
+          "pct": 72.63
+        },
+        "True": {
+          "count": 821,
+          "pct": 27.37
+        }
+      },
+      "label_missing": 0,
+      "text_stats": {
+        "empty_or_whitespace": 0,
+        "len_min": 2,
+        "len_max": 304,
+        "len_mean": 101.11,
+        "len_median": 97.0,
+        "len_p95": 242.0
+      },
+      "dialect_breakdown": [
+        {
+          "dialect": "egypt",
+          "count": 306,
+          "sarcastic_rate": 0.5065
+        },
+        {
+          "dialect": "gulf",
+          "count": 322,
+          "sarcastic_rate": 0.177
+        },
+        {
+          "dialect": "levant",
+          "count": 47,
+          "sarcastic_rate": 0.2979
+        },
+        {
+          "dialect": "magreb",
+          "count": 2,
+          "sarcastic_rate": 0.0
+        },
+        {
+          "dialect": "msa",
+          "count": 2323,
+          "sarcastic_rate": 0.2561
+        }
+      ]
+    },
+    {
+      "file": "data\\raw\\iSarcasmEval-main\\train\\train.Ar.csv",
+      "exists": true,
+      "rows": 3102,
+      "cols": 5,
+      "columns": [
+        "id",
+        "text",
+        "sarcastic",
+        "rephrase",
+        "dialect"
+      ],
+      "dtypes": {
+        "id": "int64",
+        "text": "object",
+        "sarcastic": "int64",
+        "rephrase": "object",
+        "dialect": "object"
+      },
+      "label_col": "sarcastic",
+      "text_col": "text",
+      "missing_counts": {
+        "id": 0,
+        "text": 0,
+        "sarcastic": 0,
+        "rephrase": 2357,
+        "dialect": 0
+      },
+      "missing_pct": {
+        "id": 0.0,
+        "text": 0.0,
+        "sarcastic": 0.0,
+        "rephrase": 75.98,
+        "dialect": 0.0
+      },
+      "duplicate_rows": 0,
+      "duplicate_text": 0,
+      "label_distribution": {
+        "0": {
+          "count": 2357,
+          "pct": 75.98
+        },
+        "1": {
+          "count": 745,
+          "pct": 24.02
+        }
+      },
+      "label_missing": 0,
+      "text_stats": {
+        "empty_or_whitespace": 0,
+        "len_min": 5,
+        "len_max": 191,
+        "len_mean": 76.77,
+        "len_median": 72.0,
+        "len_p95": 138.0
+      },
+      "dialect_breakdown": [
+        {
+          "dialect": "gulf",
+          "count": 84,
+          "sarcastic_rate": 0.2024
+        },
+        {
+          "dialect": "levant",
+          "count": 116,
+          "sarcastic_rate": 0.3017
+        },
+        {
+          "dialect": "magreb",
+          "count": 89,
+          "sarcastic_rate": 0.8652
+        },
+        {
+          "dialect": "msa",
+          "count": 1519,
+          "sarcastic_rate": 0.0323
+        },
+        {
+          "dialect": "nile",
+          "count": 1294,
+          "sarcastic_rate": 0.4382
+        }
+      ]
+    },
+    {
+      "file": "data\\raw\\iSarcasmEval-main\\test\\task_A_Ar_test.csv",
+      "exists": true,
+      "rows": 1400,
+      "cols": 3,
+      "columns": [
+        "text",
+        "dialect",
+        "sarcastic"
+      ],
+      "dtypes": {
+        "text": "object",
+        "dialect": "object",
+        "sarcastic": "int64"
+      },
+      "label_col": "sarcastic",
+      "text_col": "text",
+      "missing_counts": {
+        "text": 0,
+        "dialect": 0,
+        "sarcastic": 0
+      },
+      "missing_pct": {
+        "text": 0.0,
+        "dialect": 0.0,
+        "sarcastic": 0.0
+      },
+      "duplicate_rows": 0,
+      "duplicate_text": 0,
+      "label_distribution": {
+        "0": {
+          "count": 1200,
+          "pct": 85.71
+        },
+        "1": {
+          "count": 200,
+          "pct": 14.29
+        }
+      },
+      "label_missing": 0,
+      "text_stats": {
+        "empty_or_whitespace": 0,
+        "len_min": 3,
+        "len_max": 280,
+        "len_mean": 32.29,
+        "len_median": 28.0,
+        "len_p95": 68.0
+      },
+      "dialect_breakdown": [
+        {
+          "dialect": "gulf",
+          "count": 176,
+          "sarcastic_rate": 0.0568
+        },
+        {
+          "dialect": "levant",
+          "count": 168,
+          "sarcastic_rate": 0.131
+        },
+        {
+          "dialect": "magreb",
+          "count": 54,
+          "sarcastic_rate": 0.3889
+        },
+        {
+          "dialect": "msa",
+          "count": 482,
+          "sarcastic_rate": 0.0332
+        },
+        {
+          "dialect": "nile",
+          "count": 520,
+          "sarcastic_rate": 0.2519
+        }
+      ]
+    },
+    {
+      "file": "data\\raw\\ar_sarcasm_hf_train.csv",
+      "exists": true,
+      "rows": 8437,
+      "cols": 6,
+      "columns": [
+        "dialect",
+        "sarcasm",
+        "sentiment",
+        "original_sentiment",
+        "tweet",
+        "source"
+      ],
+      "dtypes": {
+        "dialect": "int64",
+        "sarcasm": "int64",
+        "sentiment": "int64",
+        "original_sentiment": "int64",
+        "tweet": "object",
+        "source": "object"
+      },
+      "label_col": "sarcasm",
+      "text_col": "tweet",
+      "missing_counts": {
+        "dialect": 0,
+        "sarcasm": 0,
+        "sentiment": 0,
+        "original_sentiment": 0,
+        "tweet": 0,
+        "source": 0
+      },
+      "missing_pct": {
+        "dialect": 0.0,
+        "sarcasm": 0.0,
+        "sentiment": 0.0,
+        "original_sentiment": 0.0,
+        "tweet": 0.0,
+        "source": 0.0
+      },
+      "duplicate_rows": 96,
+      "duplicate_text": 259,
+      "label_distribution": {
+        "0": {
+          "count": 7100,
+          "pct": 84.15
+        },
+        "1": {
+          "count": 1337,
+          "pct": 15.85
+        }
+      },
+      "label_missing": 0,
+      "text_stats": {
+        "empty_or_whitespace": 0,
+        "len_min": 8,
+        "len_max": 143,
+        "len_mean": 102.08,
+        "len_median": 109.0,
+        "len_p95": 139.0
+      },
+      "dialect_breakdown": [
+        {
+          "dialect": "0.0",
+          "count": 1904,
+          "sarcastic_rate": 0.3388
+        },
+        {
+          "dialect": "1.0",
+          "count": 414,
+          "sarcastic_rate": 0.2174
+        },
+        {
+          "dialect": "2.0",
+          "count": 439,
+          "sarcastic_rate": 0.2073
+        },
+        {
+          "dialect": "3.0",
+          "count": 28,
+          "sarcastic_rate": 0.3571
+        },
+        {
+          "dialect": "4.0",
+          "count": 5652,
+          "sarcastic_rate": 0.0886
+        }
+      ]
+    },
+    {
+      "file": "data\\train.csv",
+      "exists": true,
+      "rows": 8,
+      "cols": 4,
+      "columns": [
+        "text",
+        "label",
+        "language",
+        "source"
+      ],
+      "dtypes": {
+        "text": "object",
+        "label": "int64",
+        "language": "object",
+        "source": "object"
+      },
+      "label_col": "label",
+      "text_col": "text",
+      "missing_counts": {
+        "text": 0,
+        "label": 0,
+        "language": 0,
+        "source": 0
+      },
+      "missing_pct": {
+        "text": 0.0,
+        "label": 0.0,
+        "language": 0.0,
+        "source": 0.0
+      },
+      "duplicate_rows": 0,
+      "duplicate_text": 0,
+      "label_distribution": {
+        "1": {
+          "count": 4,
+          "pct": 50.0
+        },
+        "0": {
+          "count": 4,
+          "pct": 50.0
+        }
+      },
+      "label_missing": 0,
+      "text_stats": {
+        "empty_or_whitespace": 0,
+        "len_min": 19,
+        "len_max": 35,
+        "len_mean": 26.62,
+        "len_median": 26.5,
+        "len_p95": 33.95
+      },
+      "dialect_breakdown": null
+    },
+    {
+      "file": "data\\val.csv",
+      "exists": true,
+      "rows": 2,
+      "cols": 4,
+      "columns": [
+        "text",
+        "label",
+        "language",
+        "source"
+      ],
+      "dtypes": {
+        "text": "object",
+        "label": "int64",
+        "language": "object",
+        "source": "object"
+      },
+      "label_col": "label",
+      "text_col": "text",
+      "missing_counts": {
+        "text": 0,
+        "label": 0,
+        "language": 0,
+        "source": 0
+      },
+      "missing_pct": {
+        "text": 0.0,
+        "label": 0.0,
+        "language": 0.0,
+        "source": 0.0
+      },
+      "duplicate_rows": 0,
+      "duplicate_text": 0,
+      "label_distribution": {
+        "1": {
+          "count": 1,
+          "pct": 50.0
+        },
+        "0": {
+          "count": 1,
+          "pct": 50.0
+        }
+      },
+      "label_missing": 0,
+      "text_stats": {
+        "empty_or_whitespace": 0,
+        "len_min": 21,
+        "len_max": 28,
+        "len_mean": 24.5,
+        "len_median": 24.5,
+        "len_p95": 27.65
+      },
+      "dialect_breakdown": null
+    },
+    {
+      "file": "data\\test.csv",
+      "exists": true,
+      "rows": 2,
+      "cols": 4,
+      "columns": [
+        "text",
+        "label",
+        "language",
+        "source"
+      ],
+      "dtypes": {
+        "text": "object",
+        "label": "int64",
+        "language": "object",
+        "source": "object"
+      },
+      "label_col": "label",
+      "text_col": "text",
+      "missing_counts": {
+        "text": 0,
+        "label": 0,
+        "language": 0,
+        "source": 0
+      },
+      "missing_pct": {
+        "text": 0.0,
+        "label": 0.0,
+        "language": 0.0,
+        "source": 0.0
+      },
+      "duplicate_rows": 0,
+      "duplicate_text": 0,
+      "label_distribution": {
+        "1": {
+          "count": 1,
+          "pct": 50.0
+        },
+        "0": {
+          "count": 1,
+          "pct": 50.0
+        }
+      },
+      "label_missing": 0,
+      "text_stats": {
+        "empty_or_whitespace": 0,
+        "len_min": 20,
+        "len_max": 26,
+        "len_mean": 23.0,
+        "len_median": 23.0,
+        "len_p95": 25.7
+      },
+      "dialect_breakdown": null
+    }
+  ],
+  "combined_arabic_sources_summary": {
+    "rows_before_cleaning": 28487,
+    "label_missing": 0,
+    "empty_text": 0,
+    "duplicate_text": 3363,
+    "rows_after_basic_cleaning": 28487,
+    "label_distribution_after_cleaning": {
+      "0": {
+        "count": 23216,
+        "pct": 81.5
+      },
+      "1": {
+        "count": 5271,
+        "pct": 18.5
+      }
+    }
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "per_file": {
+    "arsarcasm_train": {
+      "exists": true,
+      "path": "data\\raw\\training_data.csv",
+      "rows": 12548,
+      "text_col": "tweet",
+      "label_col": "sarcasm",
+      "empty_texts": 0,
+      "malformed_texts": 1672,
+      "malformed_pct": 13.32,
+      "non_arabic_texts": 3,
+      "non_arabic_pct": 0.02,
+      "code_switched_texts": 5288,
+      "code_switched_pct": 42.14,
+      "malformed_reason_counts": {
+        "low_arabic_ratio": 1559,
+        "too_short_tokens": 127,
+        "url_heavy_short": 144,
+        "no_arabic_chars": 3
+      },
+      "duplicate_texts": 61,
+      "conflicting_labels_within_file": 17,
+      "label_0_count": 10380,
+      "label_1_count": 2168,
+      "majority_to_minority_ratio": 4.79,
+      "dialect_stats": {
+        "total_dialects": 5,
+        "rare_dialects_lt50": [
+          {
+            "dialect": "magreb",
+            "count": 43,
+            "sarcasm_rate": 0.3488
+          }
+        ],
+        "all": [
+          {
+            "dialect": "msa",
+            "count": 8562,
+            "sarcasm_rate": 0.1084
+          },
+          {
+            "dialect": "egypt",
+            "count": 2675,
+            "sarcasm_rate": 0.3477
+          },
+          {
+            "dialect": "gulf",
+            "count": 644,
+            "sarcasm_rate": 0.2438
+          },
+          {
+            "dialect": "levant",
+            "count": 624,
+            "sarcasm_rate": 0.2212
+          },
+          {
+            "dialect": "magreb",
+            "count": 43,
+            "sarcasm_rate": 0.3488
+          }
+        ]
+      }
+    },
+    "arsarcasm_test": {
+      "exists": true,
+      "path": "data\\raw\\testing_data.csv",
+      "rows": 3000,
+      "text_col": "tweet",
+      "label_col": "sarcasm",
+      "empty_texts": 0,
+      "malformed_texts": 282,
+      "malformed_pct": 9.4,
+      "non_arabic_texts": 2,
+      "non_arabic_pct": 0.07,
+      "code_switched_texts": 491,
+      "code_switched_pct": 16.37,
+      "malformed_reason_counts": {
+        "low_arabic_ratio": 192,
+        "url_heavy_short": 96,
+        "too_short_tokens": 107,
+        "no_arabic_chars": 2
+      },
+      "duplicate_texts": 4,
+      "conflicting_labels_within_file": 1,
+      "label_0_count": 2179,
+      "label_1_count": 821,
+      "majority_to_minority_ratio": 2.65,
+      "dialect_stats": {
+        "total_dialects": 5,
+        "rare_dialects_lt50": [
+          {
+            "dialect": "magreb",
+            "count": 2,
+            "sarcasm_rate": 0.0
+          },
+          {
+            "dialect": "levant",
+            "count": 47,
+            "sarcasm_rate": 0.2979
+          }
+        ],
+        "all": [
+          {
+            "dialect": "msa",
+            "count": 2323,
+            "sarcasm_rate": 0.2561
+          },
+          {
+            "dialect": "gulf",
+            "count": 322,
+            "sarcasm_rate": 0.177
+          },
+          {
+            "dialect": "egypt",
+            "count": 306,
+            "sarcasm_rate": 0.5065
+          },
+          {
+            "dialect": "levant",
+            "count": 47,
+            "sarcasm_rate": 0.2979
+          },
+          {
+            "dialect": "magreb",
+            "count": 2,
+            "sarcasm_rate": 0.0
+          }
+        ]
+      }
+    },
+    "isemeval_ar_train": {
+      "exists": true,
+      "path": "data\\raw\\iSarcasmEval-main\\train\\train.Ar.csv",
+      "rows": 3102,
+      "text_col": "text",
+      "label_col": "sarcastic",
+      "empty_texts": 0,
+      "malformed_texts": 38,
+      "malformed_pct": 1.23,
+      "non_arabic_texts": 0,
+      "non_arabic_pct": 0.0,
+      "code_switched_texts": 1,
+      "code_switched_pct": 0.03,
+      "malformed_reason_counts": {
+        "too_short_tokens": 29,
+        "low_arabic_ratio": 10
+      },
+      "duplicate_texts": 0,
+      "conflicting_labels_within_file": 0,
+      "label_0_count": 2357,
+      "label_1_count": 745,
+      "majority_to_minority_ratio": 3.16,
+      "dialect_stats": {
+        "total_dialects": 5,
+        "rare_dialects_lt50": [],
+        "all": [
+          {
+            "dialect": "msa",
+            "count": 1519,
+            "sarcasm_rate": 0.0323
+          },
+          {
+            "dialect": "nile",
+            "count": 1294,
+            "sarcasm_rate": 0.4382
+          },
+          {
+            "dialect": "levant",
+            "count": 116,
+            "sarcasm_rate": 0.3017
+          },
+          {
+            "dialect": "magreb",
+            "count": 89,
+            "sarcasm_rate": 0.8652
+          },
+          {
+            "dialect": "gulf",
+            "count": 84,
+            "sarcasm_rate": 0.2024
+          }
+        ]
+      }
+    },
+    "isemeval_ar_test_A": {
+      "exists": true,
+      "path": "data\\raw\\iSarcasmEval-main\\test\\task_A_Ar_test.csv",
+      "rows": 1400,
+      "text_col": "text",
+      "label_col": "sarcastic",
+      "empty_texts": 0,
+      "malformed_texts": 69,
+      "malformed_pct": 4.93,
+      "non_arabic_texts": 0,
+      "non_arabic_pct": 0.0,
+      "code_switched_texts": 0,
+      "code_switched_pct": 0.0,
+      "malformed_reason_counts": {
+        "too_short_tokens": 53,
+        "low_arabic_ratio": 16
+      },
+      "duplicate_texts": 0,
+      "conflicting_labels_within_file": 0,
+      "label_0_count": 1200,
+      "label_1_count": 200,
+      "majority_to_minority_ratio": 6.0,
+      "dialect_stats": {
+        "total_dialects": 5,
+        "rare_dialects_lt50": [],
+        "all": [
+          {
+            "dialect": "nile",
+            "count": 520,
+            "sarcasm_rate": 0.2519
+          },
+          {
+            "dialect": "msa",
+            "count": 482,
+            "sarcasm_rate": 0.0332
+          },
+          {
+            "dialect": "gulf",
+            "count": 176,
+            "sarcasm_rate": 0.0568
+          },
+          {
+            "dialect": "levant",
+            "count": 168,
+            "sarcasm_rate": 0.131
+          },
+          {
+            "dialect": "magreb",
+            "count": 54,
+            "sarcasm_rate": 0.3889
+          }
+        ]
+      }
+    },
+    "ar_sarcasm_hf_train": {
+      "exists": true,
+      "path": "data\\raw\\ar_sarcasm_hf_train.csv",
+      "rows": 8437,
+      "text_col": "tweet",
+      "label_col": "sarcasm",
+      "empty_texts": 0,
+      "malformed_texts": 1135,
+      "malformed_pct": 13.45,
+      "non_arabic_texts": 2,
+      "non_arabic_pct": 0.02,
+      "code_switched_texts": 4038,
+      "code_switched_pct": 47.86,
+      "malformed_reason_counts": {
+        "low_arabic_ratio": 1086,
+        "url_heavy_short": 60,
+        "too_short_tokens": 46,
+        "no_arabic_chars": 2
+      },
+      "duplicate_texts": 259,
+      "conflicting_labels_within_file": 41,
+      "label_0_count": 7100,
+      "label_1_count": 1337,
+      "majority_to_minority_ratio": 5.31,
+      "dialect_stats": {
+        "total_dialects": 5,
+        "rare_dialects_lt50": [
+          {
+            "dialect": "3.0",
+            "count": 28,
+            "sarcasm_rate": 0.3571
+          }
+        ],
+        "all": [
+          {
+            "dialect": "4.0",
+            "count": 5652,
+            "sarcasm_rate": 0.0886
+          },
+          {
+            "dialect": "0.0",
+            "count": 1904,
+            "sarcasm_rate": 0.3388
+          },
+          {
+            "dialect": "2.0",
+            "count": 439,
+            "sarcasm_rate": 0.2073
+          },
+          {
+            "dialect": "1.0",
+            "count": 414,
+            "sarcasm_rate": 0.2174
+          },
+          {
+            "dialect": "3.0",
+            "count": 28,
+            "sarcasm_rate": 0.3571
+          }
+        ]
+      }
+    },
+    "project_train": {
+      "exists": true,
+      "path": "data\\train.csv",
+      "rows": 8,
+      "text_col": "text",
+      "label_col": "label",
+      "empty_texts": 0,
+      "malformed_texts": 6,
+      "malformed_pct": 75.0,
+      "non_arabic_texts": 6,
+      "non_arabic_pct": 75.0,
+      "code_switched_texts": 0,
+      "code_switched_pct": 0.0,
+      "malformed_reason_counts": {
+        "no_arabic_chars": 6,
+        "low_arabic_ratio": 6
+      },
+      "duplicate_texts": 0,
+      "conflicting_labels_within_file": 0,
+      "label_0_count": 4,
+      "label_1_count": 4,
+      "majority_to_minority_ratio": 1.0,
+      "dialect_stats": null
+    },
+    "project_val": {
+      "exists": true,
+      "path": "data\\val.csv",
+      "rows": 2,
+      "text_col": "text",
+      "label_col": "label",
+      "empty_texts": 0,
+      "malformed_texts": 2,
+      "malformed_pct": 100.0,
+      "non_arabic_texts": 2,
+      "non_arabic_pct": 100.0,
+      "code_switched_texts": 0,
+      "code_switched_pct": 0.0,
+      "malformed_reason_counts": {
+        "no_arabic_chars": 2,
+        "low_arabic_ratio": 2
+      },
+      "duplicate_texts": 0,
+      "conflicting_labels_within_file": 0,
+      "label_0_count": 1,
+      "label_1_count": 1,
+      "majority_to_minority_ratio": 1.0,
+      "dialect_stats": null
+    },
+    "project_test": {
+      "exists": true,
+      "path": "data\\test.csv",
+      "rows": 2,
+      "text_col": "text",
+      "label_col": "label",
+      "empty_texts": 0,
+      "malformed_texts": 2,
+      "malformed_pct": 100.0,
+      "non_arabic_texts": 2,
+      "non_arabic_pct": 100.0,
+      "code_switched_texts": 0,
+      "code_switched_pct": 0.0,
+      "malformed_reason_counts": {
+        "no_arabic_chars": 2,
+        "low_arabic_ratio": 2
+      },
+      "duplicate_texts": 0,
+      "conflicting_labels_within_file": 0,
+      "label_0_count": 1,
+      "label_1_count": 1,
+      "majority_to_minority_ratio": 1.0,
+      "dialect_stats": null
+    }
+  },
+  "cross_source": {
+    "total_rows_all_sources": 28499,
+    "unique_texts": 24977,
+    "duplicate_texts_cross_source": 2763,
+    "conflicting_label_texts_cross_source": 66
+  }
+}
